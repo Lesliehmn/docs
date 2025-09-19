@@ -1,11 +1,11 @@
 ---
 title: "Readdy Agent"
-description: "Enhance communication on your website with an AI-driven voice and chat assistant for improved customer engagement."
+description: "Enhance communication on your website with an AI-driven chat and voice assistant for improved customer engagement."
 ---
 
 ## Overview
 
-Readdy Agent is an AI-powered chat and voice assistant for your website. It automatically responds to visitor inquiries, guides users, schedules appointments, and delivers 24/7 support—without manual effort.
+Readdy Agent is an AI-powered assistant for your website. It automatically responds to visitor inquiries, guides users, schedules appointments, and delivers 24/7 support—without manual effort.
 
 With both chat and voice modes, Readdy Agent makes your website more interactive, enhances the customer experience, and helps boost conversions.
 
@@ -59,7 +59,7 @@ Once Readdy adds the assistant to your project, you’ll receive a confirmation 
 
 <Frame caption="Calendar Setup: To ensure your assistant can help visitors book appointments based on your actual availability, we recommend setting up your calendar schedule. This way, when your website goes live, Readdy Agent can automatically suggest available time slots based on your working hours.">
   <img
-    src="/images/8ae52c51-1dbb-4877-b178-447c8277439c.png"
+    src="/20250919-101242.jpg"
     alt="8ae52c51 1dbb 4877 B178 447c8277439c Pn"
     title="8ae52c51 1dbb 4877 B178 447c8277439c Pn"
     style={{ width:"100%" }}
@@ -83,7 +83,7 @@ You can access the Readdy Agent configuration via Project Settings in the follow
 3. From the Project dropdown: Click `⋮` of current project → Select `Setting`
 
    <img
-     src="/images/3f386c1f-f934-4226-ae86-f033edf56263.png"
+     src="/111.png"
      alt="3f386c1f F934 4226 Ae86 F033edf56263 Pn"
      title="3f386c1f F934 4226 Ae86 F033edf56263 Pn"
      style={{ width:"100%" }}
@@ -93,23 +93,29 @@ You can access the Readdy Agent configuration via Project Settings in the follow
   Even without manual setup, Readdy will auto-generate a smart assistant based on your project type and content. Configuration is optional, but helps fine-tune the experience for your visitors.
 </Tip>
 
-## Appointments - Manage Your Bookings with Ease
+## 📅 Appointments - Manage Your Bookings with Ease
 
 ### Setup Calendar and Availability
 
-![9ebedf26 Adb7 46b3 Ba09 58d24ab52ade Pn](/images/9ebedf26-adb7-46b3-ba09-58d24ab52ade.png)
+![Initial State](/images/20250919-102119.png)
 
-#### Set Your Available Time Slots
+![Calendar Availabiliity - Setting Modal](/images/20250919-094335.png)
+
+#### Set Your Availability
 
 - **Availability**\
   By default, your working hours are set to **Monday to Friday, 9:00 AM – 5:00 PM**.\
   You can adjust this by clicking on the calendar interface to add or remove time blocks.
+
+  <Warning>
+    Make sure your business hours are aligned across **Website, Global Prompt, and Availability settings** to avoid confusion and booking errors.
+  </Warning>
 - **Timezone Display**\
   Your calendar will automatically use your **browser’s timezone**.
 
-#### Appointment Duration
+#### Appointment Minimum Duration
 
-Decide how long each appointment will be.
+Set the minimum duration for each appointment session.
 
 - **Default setting**: 1 hour
 - You can enter a number and choose the time unit: **Minute**, **Hour**, or **Day.**
@@ -119,7 +125,7 @@ Decide how long each appointment will be.
   - The duration you set must fit within your available time slots.
 </Note>
 
-#### Minimum Advance Booking Time (Optional)
+#### Minimum Advance Booking Period (Optional)
 
 This setting controls how far in advance users must book an appointment.
 
@@ -157,7 +163,7 @@ Appointments are grouped into three tabs. You can switch between them at the top
 - **Status** – Only shown for appointments in the Upcoming tab
 - **Customer Name** – The name provided by the person who booked
 - **Phone Number** – The number provided by the person who booked
-- **Appointment Tim**e – When the appointment is scheduled
+- **Appointment Time** – When the appointment is scheduled
 - **Conversation Record** – Based on how the appointment was made:
   - Voice: Shows a summary of the call
   - Chat: Shows the chat history
@@ -170,7 +176,7 @@ Need to check for the latest updates? Click the Refresh button to reload and syn
 
 Click Availability to open a pop-up window where you can update your settings.
 
-## Leads – Capturing Opportunities from Every Interaction
+## 🧲 Leads – Capturing Opportunities from Every Interaction
 
 Leads are automatically generated records of visitors who interacted with your Readdy Agent—whether through chat or voice. Even if a visitor didn’t book an appointment, their inquiry, conversation, or intent is captured as a Lead.
 
@@ -186,14 +192,14 @@ Leads help you identify visitors who showed interest in your services but didn�
 
 The Leads section is displayed in a table format, where each row represents one visitor interaction. The table includes the following columns:
 
-| Column Name | Description                                                                                                                                                                                      |
-| ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| Record Time | The timestamp when the visitor first interacted with the Readdy Agent                                                                                                                            |
-| Status      | The current status of the session:\<br\> - New: Recently created lead\<br\> - Ongoing: Conversation in progress\<br\> - Ended: Interaction completed\<br\> - Error: Failed or incomplete session |
-| Channel     | The type of interaction:\<br\> - Chat\<br\> - Voice                                                                                                                                              |
-| Duration    | For voice interactions: the length of the call                                                                                                                                                   |
-| Total Chats | For chat interactions: total number of message pairs (one from visitor and one from AI = one pair)                                                                                               |
-| Summary     | For voice interactions: a brief summary of the conversation generated by the system                                                                                                              |
+| Column Name | Description                                                                                        |
+| ----------- | -------------------------------------------------------------------------------------------------- |
+| Record Time | The timestamp when the visitor first interacted with the Readdy Agent                              |
+| Status      | The current status of the session: `New`, `Ongoing`, `Ended`, `Error`                              |
+| Channel     | The type of interaction: `Chat`, `Voice`                                                           |
+| Duration    | For voice interactions: the length of the call                                                     |
+| Total Chats | For chat interactions: total number of message pairs (one from visitor and one from AI = one pair) |
+| Summary     | For voice interactions: a brief summary of the conversation generated by the system                |
 
 Click on any row in the Leads table to open a detail panel on the right side of the screen. This panel includes:
 
@@ -225,7 +231,7 @@ If either voice or chat usage reaches the plan limit, a warning message will app
 
 ![Screenshot 20250918 210359 Pn](/images/screenshot-20250918-210359.png)
 
-## Settings – Customize Your Readdy Agent
+## ⚙️ Settings – Customize Your Readdy Agent
 
 The Settings page allows you to configure how your Readdy Agent behaves and communicates with your website visitors. These settings help tailor the assistant’s tone, language, and knowledge base to better serve your business needs.
 
@@ -249,21 +255,21 @@ When you first enable the Readdy Agent, a default language is selected based on 
 
 Supported languages include:
 
-| German           |
-| ---------------- |
-| English          |
-| Spanish          |
-| French           |
-| Hindi            |
-| Japanese         |
-| Korean           |
-| Dutch            |
-| Portuguese       |
-| Russian          |
-| Turkish          |
-| Vietnamese       |
-| Chinese          |
-| Chinese (Taiwan) |
+| English             |
+| ------------------- |
+| German              |
+| Spanish             |
+| French              |
+| Hindi               |
+| Japanese            |
+| Korean              |
+| Dutch               |
+| Portuguese          |
+| Russian             |
+| Turkish             |
+| Vietnamese          |
+| Simplified Chinese  |
+| Traditional Chinese |
 
 <Note>
   You don’t need to worry too much about language preferences. The Readdy Agent will automatically respond in the visitor’s language based on how they initiate the conversation.
@@ -278,6 +284,19 @@ The FAQs section allows you to provide additional context to your Readdy Agent b
 
 > Use Case: Add questions like “What are your business hours?” or “Do you offer international shipping?” to ensure quick, accurate responses.
 
+<Warning>
+  ### Keep Your Business Hours Consistent
+
+  To ensure the Readdy Agent provides accurate information and improves appointment success rates, please make sure your business hours are consistent across the following places in your project:
+
+  1. **Website content** – if business hours are shown publicly on your site
+  2. **Calendar Availability settings** – where actual bookable time slots are configured
+  3. **Global Prompt** – if you’ve informed the AI about your hours here
+  4. **FAQs** - if your business hours are mentioned in any frequently asked questions
+
+  Inconsistent settings may cause the AI to give conflicting information or reduce the chances of successful bookings.
+</Warning>
+
 ### 📬 New Appointment Notification
 
 This toggle allows you to control whether you want to receive email notifications when a new appointment is booked through the Readdy Agent.
@@ -289,23 +308,23 @@ This toggle allows you to control whether you want to receive email notification
   Stay informed: Keep this enabled to never miss a new lead or booking.
 </Tip>
 
-## Usage Tiers & Limits
+## 📊 Usage Tiers & Limits
 
-| Subscription | Voice Minutes | Chats Count   |
-| ------------ | :------------ | :------------ |
-| Free         | 5 min         | 50 messages   |
-| Starter      | 20 min        | 200 messages  |
-| Pro-40       | 80 min        | 800 messages  |
-| Pro-80       | 160 min       | 1600 messages |
-| Pro-120      | 250 min       | 2500 messages |
-| Pro-160      | 350 min       | 3500 messages |
-| Pro-200      | 450 min       | 4500 messages |
+| Subscription | Voice Minutes | Chats Count |
+| ------------ | :------------ | :---------- |
+| Free         | 5 min         | 50 chats    |
+| Starter      | 20 min        | 200 chats   |
+| Pro-40       | 80 min        | 800 chats   |
+| Pro-80       | 160 min       | 1600 chats  |
+| Pro-120      | 250 min       | 2500 chats  |
+| Pro-160      | 350 min       | 3500 chats  |
+| Pro-200      | 450 min       | 4500 chats  |
 
 <Info>
   Chats Count
 
-  - A “message” refers to one interaction where the user sends a message and Readdy Agent responds or takes an action.
-  - Most chat sessions typically consist of 2–4 messages.
+  - A “chat” refers to one interaction where the user sends a message and Readdy Agent responds or takes an action.
+  - Most chat sessions typically consist of 2–3 messages.
 </Info>
 
 <Info>
@@ -314,7 +333,7 @@ This toggle allows you to control whether you want to receive email notification
   - When your subscription’s voice minutes or chat limits are reached, the Readdy Agent will stop operating on your website.
   - Please monitor your usage and email notifications to avoid interruptions.
   - Usage limits reset with each subscription cycle.
-  - All shared projects under the same account share the same usage quota.
+  - All published projects under the same account share the same usage quota.
 </Info>
 
 ## Need Help?
